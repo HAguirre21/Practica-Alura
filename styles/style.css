@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario: black;
+    --color-secundario: white;
+    --color-terciario: #22D4FD;
+    --fuente-krona-one: 'Krona One', sans-serif;
+    --fuente-monserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 3% 0 0 15%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header_link{
+    font-family:  var(--fuente-monserrat);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+
+.titulo{
+    color: var(--color-terciario);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.4rem;
+     font-family: var(--fuente-krona-one)
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem;
+      font-family: var(--fuente-monserrat);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+ 
+}
+.presentacion_botones_subtitulos{
+    font-family: var(--fuente-krona-one);
+    font-weight: 400px
+    ;
+}
+
+.instagram{
+    display: flex;
+ border: 3px solid var(--color-terciario);  
+    width: 50% ;
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0px ;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--color-secundario);  
+    justify-content: center;
+    gap: 10px;
+}
+
+.instagram:hover{
+    background-color: #272727;
+}
+
+.presentacion_imagen{
+    width: 50%;
+}
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400px;
+}
+
+@media(max-width:1200px){
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_contenido{
+        width: auto;
+    }
+}
